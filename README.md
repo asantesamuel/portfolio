@@ -1,6 +1,6 @@
 # Samuel Boakye Asante — Portfolio
 
-A responsive, multi-page portfolio for Samuel Boakye Asante, a software engineer focused on backend engineering. The site presents selected projects, resume-verified professional experience, skills, education, leadership, and direct contact details.
+A responsive, multi-page portfolio for Samuel Boakye Asante, a software engineer focused on backend engineering. The site presents selected projects, résumé-supported experience, academic background, skills, leadership, and direct contact details.
 
 ## Technologies
 
@@ -24,12 +24,13 @@ Then open <http://localhost:8000/>. The site can also be deployed as static file
 
 ```text
 .
+├── README.md                 Local setup and maintenance notes
+├── SPEC.md                   Product and design specification
+├── QA-REPORT.md              Browser and layout review
 ├── index.html                 Home
-├── about.html                 About
+├── about.html                 Background, education, skills, leadership
 ├── experience.html            Professional experience
 ├── projects.html              Selected projects
-├── skills.html                Skills
-├── education.html             Education and leadership
 ├── contact.html               Contact information
 ├── projects/                  Individual project detail pages
 ├── css/styles.css             Shared design tokens and responsive styles
@@ -54,13 +55,13 @@ Then open <http://localhost:8000/>. The site can also be deployed as static file
 
 Project cards and individual case-study pages are static HTML. Update both places when a summary or status changes so the list and detail view stay consistent. Repository links are external anchors with safe new-tab attributes. Do not add deployment, metrics, or capabilities unless verified.
 
-### Update experience, education, and leadership
+### Update experience, education, skills, and leadership
 
-Edit the entries directly in `experience.html` and `education.html`. The home page also shows a short experience summary in `index.html`; update it when the three most recent roles change. Dates, role titles, organizations, and descriptions should match the verified source material.
+Edit work entries in `experience.html`. Education, certification, leadership, and skill groups live in the corresponding sections of `about.html`; the in-page links at the top jump to each group. Dates, role titles, organizations, and tool names should match verified source material. The home page intentionally highlights a small selection of work instead of repeating the full experience list.
 
 ### Update contact and social links
 
-The primary contact details are in `contact.html`; GitHub and LinkedIn also appear on the home page and in the footer/navigation. Update all repeated instances together. Use `mailto:` for email, an international `tel:` URI for phone, and full HTTPS URLs for external profiles.
+The primary contact details are in `contact.html`; GitHub and LinkedIn also appear on the home page. Update repeated profile links together. Use `mailto:` for email, an international `tel:` URI for phone, and full HTTPS URLs for external profiles.
 
 ### Replace the résumé or other assets
 
@@ -76,4 +77,4 @@ Upload the project directory as static files while preserving its relative paths
 
 ## Quality assurance
 
-The implementation was reviewed for the seven main pages and four project detail pages. Navigation uses direct HTML page links, so browser history remains native. The actual browser, keyboard, theme, viewport, and link checks are recorded in [QA-REPORT.md](QA-REPORT.md).
+The site has five primary pages and four project detail pages. Navigation uses direct HTML page links, so browser history remains native. The actual browser, keyboard, theme, viewport, and link checks are recorded in [QA-REPORT.md](QA-REPORT.md).

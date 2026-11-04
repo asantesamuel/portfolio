@@ -60,7 +60,7 @@
       }
     });
 
-    const desktopQuery = window.matchMedia("(min-width: 1081px)");
+    const desktopQuery = window.matchMedia("(min-width: 961px)");
     const resetMenuForDesktop = (event) => {
       if (event.matches) closeMenu();
     };
